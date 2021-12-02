@@ -100,5 +100,7 @@ namespace zadanie1._2
             this.btnHOR_AW_SLIDE.Invalidate();
             this.btnCenter_AW_SLIDE.Invalidate();
         }
+
+        
     }
 }
