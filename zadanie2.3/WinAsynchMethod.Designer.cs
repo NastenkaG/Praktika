@@ -35,6 +35,7 @@ namespace zadanie2._3
             this.btnWork = new System.Windows.Forms.Button();
             this.txbB = new System.Windows.Forms.TextBox();
             this.txbA = new System.Windows.Forms.TextBox();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.SuspendLayout();
             // 
             // lblA
@@ -84,8 +85,10 @@ namespace zadanie2._3
             // 
             // txbA
             // 
+            this.helpProvider1.SetHelpString(this.txbA, "For input integer A");
             this.txbA.Location = new System.Drawing.Point(95, 24);
             this.txbA.Name = "txbA";
+            this.helpProvider1.SetShowHelp(this.txbA, true);
             this.txbA.Size = new System.Drawing.Size(100, 22);
             this.txbA.TabIndex = 6;
             // 
@@ -115,6 +118,7 @@ namespace zadanie2._3
         private System.Windows.Forms.Button btnWork;
         private System.Windows.Forms.TextBox txbB;
         private System.Windows.Forms.TextBox txbA;
+        private System.Windows.Forms.HelpProvider helpProvider1;
     }
 }
 
