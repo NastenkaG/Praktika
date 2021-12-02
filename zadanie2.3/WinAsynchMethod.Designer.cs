@@ -58,8 +58,10 @@ namespace zadanie2._3
             // 
             // btnRun
             // 
+            this.helpProvider1.SetHelpString(this.btnRun, "Sum");
             this.btnRun.Location = new System.Drawing.Point(16, 64);
             this.btnRun.Name = "btnRun";
+            this.helpProvider1.SetShowHelp(this.btnRun, true);
             this.btnRun.Size = new System.Drawing.Size(75, 23);
             this.btnRun.TabIndex = 2;
             this.btnRun.Text = "Сумма";
@@ -68,8 +70,10 @@ namespace zadanie2._3
             // 
             // btnWork
             // 
+            this.helpProvider1.SetHelpString(this.btnWork, "Start work");
             this.btnWork.Location = new System.Drawing.Point(138, 118);
             this.btnWork.Name = "btnWork";
+            this.helpProvider1.SetShowHelp(this.btnWork, true);
             this.btnWork.Size = new System.Drawing.Size(75, 23);
             this.btnWork.TabIndex = 3;
             this.btnWork.Text = "Работа";
@@ -78,8 +82,10 @@ namespace zadanie2._3
             // 
             // txbB
             // 
+            this.helpProvider1.SetHelpString(this.txbB, "For input integer B");
             this.txbB.Location = new System.Drawing.Point(306, 21);
             this.txbB.Name = "txbB";
+            this.helpProvider1.SetShowHelp(this.txbB, true);
             this.txbB.Size = new System.Drawing.Size(100, 22);
             this.txbB.TabIndex = 5;
             // 
@@ -103,6 +109,10 @@ namespace zadanie2._3
             this.Controls.Add(this.btnRun);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblA);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.HelpButton = true;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "WinAsynchMethod";
             this.Text = "Асинхронный запуск";
             this.ResumeLayout(false);
