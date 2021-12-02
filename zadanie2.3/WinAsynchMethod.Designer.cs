@@ -29,6 +29,7 @@ namespace zadanie2._3
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblA = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnRun = new System.Windows.Forms.Button();
@@ -37,6 +38,7 @@ namespace zadanie2._3
             this.txbA = new System.Windows.Forms.TextBox();
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.button1 = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // lblA
@@ -66,6 +68,7 @@ namespace zadanie2._3
             this.btnRun.Size = new System.Drawing.Size(75, 23);
             this.btnRun.TabIndex = 2;
             this.btnRun.Text = "Сумма";
+            this.toolTip1.SetToolTip(this.btnRun, "Sum");
             this.btnRun.UseVisualStyleBackColor = true;
             this.btnRun.Click += new System.EventHandler(this.btnRun_Click);
             // 
@@ -78,6 +81,7 @@ namespace zadanie2._3
             this.btnWork.Size = new System.Drawing.Size(75, 23);
             this.btnWork.TabIndex = 3;
             this.btnWork.Text = "Работа";
+            this.toolTip1.SetToolTip(this.btnWork, "Start work");
             this.btnWork.UseVisualStyleBackColor = true;
             this.btnWork.Click += new System.EventHandler(this.btnWork_Click);
             // 
@@ -89,6 +93,7 @@ namespace zadanie2._3
             this.helpProvider1.SetShowHelp(this.txbB, true);
             this.txbB.Size = new System.Drawing.Size(100, 22);
             this.txbB.TabIndex = 5;
+            this.toolTip1.SetToolTip(this.txbB, "For input integer B");
             // 
             // txbA
             // 
@@ -98,6 +103,7 @@ namespace zadanie2._3
             this.helpProvider1.SetShowHelp(this.txbA, true);
             this.txbA.Size = new System.Drawing.Size(100, 22);
             this.txbA.TabIndex = 6;
+            this.toolTip1.SetToolTip(this.txbA, "For input integer A");
             // 
             // helpProvider1
             // 
@@ -146,6 +152,7 @@ namespace zadanie2._3
         private System.Windows.Forms.TextBox txbA;
         private System.Windows.Forms.HelpProvider helpProvider1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 
