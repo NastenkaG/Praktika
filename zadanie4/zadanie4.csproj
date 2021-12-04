@@ -59,10 +59,21 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
     <Compile Include="RBProductDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>RBProductDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RBProductDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RBProductDataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="WinDB.cs">
       <SubType>Form</SubType>
@@ -74,6 +85,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -117,6 +131,17 @@
     </None>
     <None Include="RBProductDataSet.xss">
       <DependentUpon>RBProductDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RBProductDataSet1.xsc">
+      <DependentUpon>RBProductDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="RBProductDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RBProductDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RBProductDataSet1.xss">
+      <DependentUpon>RBProductDataSet1.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
