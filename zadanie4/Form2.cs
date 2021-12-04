@@ -43,5 +43,11 @@ namespace zadanie4
             ПоставщикиDataView.Sort = SortTextBox.Text;
             ПоставщикиDataView.RowFilter = FilterTextBox.Text;
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form3 Exercise3 = new Form3();
+            Exercise3.Show();
+        }
     }
 }
